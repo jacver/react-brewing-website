@@ -54,6 +54,11 @@ class Food(models.Model):
                             default="Food Name",   
                             max_length=100
                             )
+    price = models.DecimalField(
+                            # Price of food, not to exceed 6 digits i.e., 1000.00
+                            max_digits=6,
+                            decimal_places=2      
+                            )
     image_URL = models.TextField(
                             default="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
                             )
