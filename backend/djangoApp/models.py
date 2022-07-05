@@ -65,7 +65,6 @@ class Food(models.Model):
                             default="Seperated by comma - ex: gluten free, vegan, dairy free",   
                             max_length=200
                             )
-
     def __str__(self):
         #reference name of food item
         return self.name
@@ -76,9 +75,14 @@ class Event(models.Model):
                             max_length=200
                             )
     event_URL = models.TextField(
+                            # URL for event/food truck/vendor
                             default="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
                             )
-    date
+    date = models.DateTimeField(
+                            # Event date/time
+                            auto_now= False,
+                            auto_now_add=False
+                            )
     description = models.TextField(
                             # Event Description
                             default="Join us for..."
