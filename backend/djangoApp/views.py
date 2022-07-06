@@ -1,3 +1,4 @@
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -6,6 +7,11 @@ from rest_framework import status
 
 from .models import Beer, Food, Event, Merchandise
 from .serializers import *
+
+def list_beer(request):
+    beer = Beer.objects.all().values()
+    beer_list = list(beer)
+    return JsonResponse(beer_list, safe=False)
 
 class BeerList(generics.ListCreateAPIView):
     queryset = Beer.objects.all()
