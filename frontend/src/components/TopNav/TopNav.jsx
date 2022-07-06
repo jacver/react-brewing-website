@@ -12,7 +12,7 @@ function TopNav() {
         id="scrollspyTop"
       >
         <Container>
-          <Navbar.Brand href="#home"></Navbar.Brand>
+          <Navbar.Brand href="#home">LOGO</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             {/* vvvv Do not remove this empty nav list - will realign links from right to left vvvvv*/}
@@ -24,37 +24,34 @@ function TopNav() {
             <Nav>
               <li className="nav-item">
                 <a className="nav-link" href="#scrollspyAboutMe">
-                  About Me
+                  Menu
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#scrollspyAboutMeTech">
-                  Tech
+                  Shop
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#scrollspyProjects">
-                  Projects
+                  Events
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#scrollspyContact">
-                  Contact
+                  Tours
                 </a>
               </li>
-
-              {/* button for resume download */}
-              <a
-                href="https://docs.google.com/document/d/16bOtF7reWw2IHdM6CDNJbwEYCmzCy-Qz_R5VHmXOa6I/export?format=pdf"
-                download="Jacob Vernau Resume.pdf"
-              >
-                <button type="button" className="btn btn-outline-warning">
-                  <span>
-                    <i className="fas fa-download"></i>
-                  </span>
-                  <span className="btn-text">Resume</span>
-                </button>
-              </a>
+              <li className="nav-item">
+                <a className="nav-link" href="#scrollspyContact">
+                  Visit
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#scrollspyContact">
+                  About
+                </a>
+              </li>
             </Nav>
           </Navbar.Collapse>
         </Container>
