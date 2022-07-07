@@ -11,14 +11,24 @@ import TopNav from "./components/TopNav/TopNav";
 import APITest from "./components/APITest";
 import Footer from "./components/Footer/Footer";
 
+// Page Imports
+import Welcome from "./pages/Welcome/Welcome";
+
+//--------------------
+// TO DO: Navbar and footer potential imports into pages -- components not needed on "/" route
+//--------------------
+
 function App() {
   return (
     <div className="App">
-      <TopNav />
+      {/* <TopNav /> */}
       <Routes>
-        <Route path="/" element={<APITest />} />
+        <Route path="/" element={<Welcome />} />
       </Routes>
-      <Footer />
+      <Routes>
+        <Route path="test" element={<APITest />} />
+      </Routes>
+      {/* <Footer /> */}
     </div>
   );
 }
