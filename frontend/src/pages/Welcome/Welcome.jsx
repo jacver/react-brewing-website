@@ -30,7 +30,10 @@ function Welcome() {
         <a href="/" class="btnAnimation btn-up">
           Over 21
         </a>
-        <a href="/" class="btnAnimation btn-down">
+        <a
+          href="https://en.wikipedia.org/wiki/Curiosity_killed_the_cat"
+          class="btnAnimation btn-down"
+        >
           Under 21
         </a>
       </div>
