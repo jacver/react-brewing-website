@@ -7,12 +7,11 @@ import { Routes, Route } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 // Component Imports
-import TopNav from "./components/TopNav/TopNav";
 import APITest from "./components/APITest";
-import Footer from "./components/Footer/Footer";
 
 // Page Imports
 import Welcome from "./pages/Welcome/Welcome";
+import Home from "./pages/Home/Home";
 
 //--------------------
 // TO DO: Navbar and footer potential imports into pages -- components not needed on "/" route
@@ -21,14 +20,12 @@ import Welcome from "./pages/Welcome/Welcome";
 function App() {
   return (
     <div className="App">
-      {/* <TopNav /> */}
       <Routes>
         <Route path="/" element={<Welcome />} />
       </Routes>
       <Routes>
-        <Route path="test" element={<APITest />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
-      {/* <Footer /> */}
     </div>
   );
 }

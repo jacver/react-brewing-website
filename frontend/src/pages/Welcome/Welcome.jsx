@@ -15,7 +15,7 @@ function Welcome() {
             alt="logo"
           />
         </div>
-        <h1>Welcome, Pimp</h1>
+        <h1>Welcome, dude</h1>
       </div>
       <div className="welcomeContent mb-5">
         <p>Taproom & Outdoor Seating Available</p>
@@ -27,12 +27,13 @@ function Welcome() {
       </div>
       <div className="ageAuth mb-5">
         <p>To see more, please verify you are of legal drinking age</p>
-        <a href="/" class="btnAnimation btn-up">
+        <a href="/" className="btnAnimation btn-up">
           Over 21
         </a>
+
         <a
           href="https://en.wikipedia.org/wiki/Curiosity_killed_the_cat"
-          class="btnAnimation btn-down"
+          className="btnAnimation btn-down"
         >
           Under 21
         </a>

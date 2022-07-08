@@ -1,0 +1,18 @@
+/* frontend\src\components\HomeInfo\homeinfo.css */
+.homeInfoWrapper {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
