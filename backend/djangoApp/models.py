@@ -44,6 +44,10 @@ class Beer(models.Model):
                             max_digits=4,
                             decimal_places=2    
                             )
+    beer_of_the_month = models.BooleanField(
+                            default=False
+                            )
+
     def __str__(self):
         # reference the name of each beer
         return self.name
