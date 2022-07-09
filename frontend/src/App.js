@@ -12,10 +12,7 @@ import APITest from "./components/APITest";
 // Page Imports
 import Welcome from "./pages/Welcome/Welcome";
 import Home from "./pages/Home/Home";
-
-//--------------------
-// TO DO: Navbar and footer potential imports into pages -- components not needed on "/" route
-//--------------------
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -25,6 +22,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/home" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

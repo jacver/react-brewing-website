@@ -13,7 +13,7 @@ function HomeInfo() {
             OUR BEER
           </a>
 
-          <a href="/" className="btnAnimation btn-down">
+          <a href="/about" className="btnAnimation btn-down">
             OUR STORY
           </a>
         </div>

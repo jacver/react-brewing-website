@@ -1,0 +1,18 @@
+/* frontend\src\components\AboutContent\aboutcontent.css */
+
+.about-content-wrapper {
+  /* padding-top: 20%; */
+  height: 100vh;
+  overflow: scroll;
+}
+
+.card-description {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .about-content-wrapper {
+    padding-top: 25%;
+  }
+}

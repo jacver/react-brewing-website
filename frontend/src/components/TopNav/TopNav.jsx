@@ -3,7 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 
 function TopNav() {
   return (
-    <>
+    <div>
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -43,12 +43,7 @@ function TopNav() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#scrollspyContact">
-                  Visit
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#scrollspyContact">
+                <a className="nav-link" href="/about">
                   About
                 </a>
               </li>
@@ -56,7 +51,7 @@ function TopNav() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+    </div>
   );
 }
 
