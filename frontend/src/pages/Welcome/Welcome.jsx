@@ -5,9 +5,9 @@ import "./welcome.css";
 
 function Welcome() {
   return (
-    <div className="welcomeWrapper text-light">
-      <div className="bannerWrapper d-flex flex-column justify-content-center align-items-center mb-5">
-        <div style={{ width: "20em" }} className="logoContainer">
+    <div className="welcomeWrapper text-light p-1">
+      <div className="bannerWrapper d-flex flex-wrap flex-column justify-content-center align-items-center mb-5 ">
+        <div style={{ width: "20rem" }} className="logoContainer">
           <img
             style={{ width: "100%" }}
             className="logo"
@@ -27,7 +27,7 @@ function Welcome() {
       </div>
       <div className="ageAuth mb-5">
         <p>To see more, please verify you are of legal drinking age</p>
-        <a href="/" className="btnAnimation btn-up">
+        <a href="/home" className="btnAnimation btn-up">
           Over 21
         </a>
 

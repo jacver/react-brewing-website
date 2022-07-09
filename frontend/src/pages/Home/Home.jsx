@@ -6,6 +6,7 @@ import React from "react";
 import TopNav from "../../components/TopNav/TopNav";
 import Hero from "../../components/Hero/Hero";
 import HomeInfo from "../../components/HomeInfo/HomeInfo";
+import HomeAbout from "../../components/HomeAbout/HomeAbout";
 import Footer from "../../components/Footer/Footer";
 
 function Home() {
@@ -14,10 +15,9 @@ function Home() {
       {/* COMPONENT IMPORT */}
       <TopNav />
       <Hero />
+      <HomeAbout />
       <HomeInfo />
-
-      {/* HOME CONTENT */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

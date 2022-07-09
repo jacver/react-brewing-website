@@ -1,13 +1,28 @@
 /* frontend/src/components/Footer/footer.css */
 
 .footer-wrapper {
-  position: fixed;
   padding: 10px 10px 0px 10px;
-  bottom: 0;
   width: 100%;
   /* Height of the footer*/
-  height: 10vh;
-  background-image: url("https://i.imgur.com/X4xR6dZ.png");
-  background-size: 100% 100%;
-  background-color: blueviolet;
+  min-height: 20vh;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/ep_naturalblack.png");
+  /* background-size: 100% 100%; */
+
+  /* flex properties */
+  justify-content: space-evenly;
+}
+
+.footer-column {
+  width: 20rem;
+}
+
+.contact-wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.hours-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
