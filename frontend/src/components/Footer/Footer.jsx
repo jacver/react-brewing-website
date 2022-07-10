@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="footer-wrapper bg-dark text-white flex-column flex-md-row flex-lg-row d-flex p-5 justify-content-center align-items-center">
       <div className="footer-column">
-        <h2 className="text-warning">VISIT</h2>
+        <h2 style={{ color: "#59ff48" }}>VISIT</h2>
         <div>
           <p>123 Fake Rd.</p>
           <p>Denver, CO 12345</p>
@@ -23,10 +23,10 @@ function Footer() {
         </div>
         <div className="hours-wrapper d-flex flex-column justify-content-between pt-3">
           <p>
-            <span className="text-warning">Weekdays: </span>11am - 10pm
+            <span style={{ color: "#59ff48" }}>Weekdays: </span>11am - 10pm
           </p>
           <p>
-            <span className="text-warning">Weekends: </span> 10am - 11pm
+            <span style={{ color: "#59ff48" }}>Weekends: </span> 10am - 11pm
           </p>
         </div>
       </div>

@@ -1,9 +1,7 @@
 /* frontend\src\components\AboutContent\aboutcontent.css */
 
 .about-content-wrapper {
-  /* padding-top: 20%; */
-  height: 100vh;
-  overflow: scroll;
+  max-width: 100vw;
 }
 
 .card-description {
@@ -13,6 +11,6 @@
 
 @media only screen and (max-device-width: 768px) {
   .about-content-wrapper {
-    padding-top: 25%;
+    padding-top: 10%;
   }
 }

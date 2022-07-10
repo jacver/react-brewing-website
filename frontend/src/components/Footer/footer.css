@@ -21,6 +21,10 @@
   color: white;
 }
 
+.contact-wrapper a:hover {
+  color: #59ff48;
+}
+
 .hours-row {
   display: flex;
   flex-direction: row;

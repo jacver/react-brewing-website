@@ -9,7 +9,7 @@ function HomeAbout() {
       }}
       className="homeAboutContainer d-flex flex-column justify-content-center align-items-center p-5 bg-dark text-white"
     >
-      <h2 className="text-warning">ABOUT US</h2>
+      <h2 style={{ color: "#59ff48" }}>ABOUT US</h2>
       <p className="w-80">
         We are proud to offer our homegrown products brewed in-house and a wide
         variety of beers & foods we import from around the world. We are always
