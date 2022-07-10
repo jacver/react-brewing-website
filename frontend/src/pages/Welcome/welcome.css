@@ -28,77 +28,105 @@
 
 /* CSS Button reference: https://cssbuttons.app/?utm_source=toolkit.addy.codes*/
 
-/* This will hit both buttons */
-.btnAnimation {
-  padding: 10px 25px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  background: transparent;
-  outline: none !important;
+/* Button inspo  */
+
+.hover {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  /* sizing */
+  width: 60px;
+  height: 45px;
+  padding: 25px;
+
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* font */
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+
+  /* other */
+  transition: all 0.8s;
   cursor: pointer;
-  transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
-  margin: 0.5rem;
+  overflow: hidden;
 }
 
-/* btn-down is the Under 21 button that animates */
-.btn-down {
-  border: 2px solid rgb(255, 255, 255);
-  z-index: 1;
+/* both buttons */
+.hover:hover .box:before {
+  transform: translateY(0);
+}
+
+/* border settings */
+.box1 {
+  border: 2px solid white;
+  border-right: none;
+}
+
+.box2 {
+  border: 2px solid white;
+  border-left: none;
+}
+
+/* Over 21 button settings */
+
+.box-overage:before {
+  content: "Skol,";
+  position: absolute;
+  top: 0;
+  background: white;
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: transform 0.4s;
+}
+
+.box-overage:nth-child(2)::before {
+  transform: translateY(-100%);
+  content: "Daddy!";
+}
+
+/* Under 21 button settings */
+
+.box-underage:before {
+  content: "Not";
+  position: absolute;
+  top: 0;
+  background: white;
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: transform 0.4s;
+}
+
+.box-underage:nth-child(2)::before {
+  transform: translateY(100%);
+  content: "Today!";
+}
+
+/* End age gateway settings */
+
+/* socials */
+
+.socials-icon {
+  text-decoration: none;
   color: white;
 }
 
-.btn-down:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background: rgb(255, 255, 255);
-  transition: all 0.3s ease;
-}
-
-.btn-down:hover {
-  color: rgb(0, 0, 0);
-}
-
-.btn-down:hover:after {
-  top: 0;
-  height: 100%;
-}
-
-.btn-down:active {
-  top: 2px;
-}
-
-/* btn-up is the Over 21 button that animates up */
-.btn-up {
-  border: 2px solid rgb(255, 255, 255);
-  z-index: 1;
-  color: white;
-}
-
-.btn-up:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: rgb(255, 255, 255);
-  transition: all 0.3s ease;
-}
-
-.btn-up:hover {
-  color: rgb(0, 0, 0);
-}
-
-.btn-up:hover:after {
-  top: auto;
-  bottom: 0;
-  height: 100%;
+.socials-icon:hover {
+  color: #39ff14;
 }

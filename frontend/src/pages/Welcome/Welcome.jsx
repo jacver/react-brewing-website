@@ -3,6 +3,11 @@
 import React from "react";
 import "./welcome.css";
 
+// React Icon Imports
+import { FaGithub, FaReact, FaLinkedin, FaRegUser } from "react-icons/fa";
+import { SiDjango, SiPython, SiPostgresql, SiJavascript } from "react-icons/si";
+import { BsBootstrapFill } from "react-icons/bs";
+
 function Welcome() {
   return (
     <div className="welcomeWrapper text-light p-1">
@@ -27,19 +32,37 @@ function Welcome() {
       </div>
       <div className="ageAuth mb-5">
         <p>To see more, please verify you are of legal drinking age</p>
-        <a href="/home" className="btnAnimation btn-up">
-          Over 21
-        </a>
+        <div className="ageGate d-flex gap-3 justify-content-center">
+          <a href="/home">
+            <div className="hover">
+              <div className="box box-overage box1">Over</div>
+              <div className="box box-overage box2 d-flex">21</div>
+            </div>
+          </a>
 
-        <a
-          href="https://en.wikipedia.org/wiki/Curiosity_killed_the_cat"
-          className="btnAnimation btn-down"
-        >
-          Under 21
-        </a>
+          <a href="https://en.wikipedia.org/wiki/Curiosity_killed_the_cat">
+            <div className="hover">
+              <div className="box box-underage box1">Under</div>
+              <div className="box box-underage box2">21</div>
+            </div>
+          </a>
+        </div>
       </div>
-      <div className="socialsWrapper">
-        <p>socials links if i make them</p>
+      <div className="socialsWrapper w-50" style={{ margin: "0 auto" }}>
+        <div className="socialsRow d-flex align-items-center justify-content-center gap-5 fs-4">
+          <a className="socials-icon" href="https://github.com/jacver">
+            <FaGithub />
+          </a>
+          <a
+            className="socials-icon"
+            href="https://www.linkedin.com/in/jacobvernau/"
+          >
+            <FaLinkedin />
+          </a>
+          <a className="socials-icon" href="https://www.jacobvernau.com/">
+            <FaRegUser />
+          </a>
+        </div>
       </div>
     </div>
   );
