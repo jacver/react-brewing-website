@@ -1,7 +1,7 @@
 /* frontend\src\components\HomeInfo\homeinfo.css */
 .homeInfoWrapper {
   /* Sizing */
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
 
   /* Text styles */
