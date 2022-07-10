@@ -2,4 +2,7 @@ git subtree push --prefix backend back-heroku dev:main
 
 to push front w/ this command change back-heroku to front-heroku and change backend to frontend
 
+
+heroku open -a back-brewery
+
 heroku run -a back-brewery python manage.py migrate
