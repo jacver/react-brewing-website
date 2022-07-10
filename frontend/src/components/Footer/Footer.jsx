@@ -3,6 +3,8 @@
 import React from "react";
 import "./footer.css";
 
+import { FaGithub, FaLinkedin, FaRegUser } from "react-icons/fa";
+
 function Footer() {
   return (
     <footer className="footer-wrapper bg-dark text-white flex-column flex-md-row flex-lg-row d-flex p-5 justify-content-center align-items-center">
@@ -39,6 +41,20 @@ function Footer() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
+        <div className="socialsRow d-flex align-items-center justify-content-center gap-5 fs-4">
+          <a className="socials-icon" href="https://github.com/jacver">
+            <FaGithub />
+          </a>
+          <a
+            className="socials-icon"
+            href="https://www.linkedin.com/in/jacobvernau/"
+          >
+            <FaLinkedin />
+          </a>
+          <a className="socials-icon" href="https://www.jacobvernau.com/">
+            <FaRegUser />
+          </a>
+        </div>
       </div>
     </footer>
   );

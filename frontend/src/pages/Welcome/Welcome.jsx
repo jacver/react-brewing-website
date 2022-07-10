@@ -4,9 +4,7 @@ import React from "react";
 import "./welcome.css";
 
 // React Icon Imports
-import { FaGithub, FaReact, FaLinkedin, FaRegUser } from "react-icons/fa";
-import { SiDjango, SiPython, SiPostgresql, SiJavascript } from "react-icons/si";
-import { BsBootstrapFill } from "react-icons/bs";
+import { FaGithub, FaLinkedin, FaRegUser } from "react-icons/fa";
 
 function Welcome() {
   return (
