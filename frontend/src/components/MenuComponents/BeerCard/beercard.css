@@ -9,7 +9,6 @@
 }
 
 .beer-card {
-  height: 15rem;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -24,4 +23,14 @@
 }
 .label {
   max-height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .label-container {
+    display: none;
+  }
+
+  .label {
+    display: none;
+  }
 }
