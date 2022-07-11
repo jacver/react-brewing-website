@@ -1,4 +1,13 @@
+// frontend/src/components/TopNav/TopNav.jsx
+
+// React
 import React from "react";
+import { Link } from "react-router-dom";
+
+// CSS
+import "./topnav.css";
+
+// Bootstrap
 import { Navbar, Container, Nav } from "react-bootstrap";
 
 function TopNav() {
@@ -23,9 +32,11 @@ function TopNav() {
             {/* -- scrollspy implemented to scroll to selected HTML element on click */}
             <Nav>
               <li className="nav-item">
-                <a className="nav-link" href="#scrollspyAboutMe">
-                  Menu
-                </a>
+                <Link to={"/menu"} className={"nav-Link"}>
+                  <a className="nav-link" href="/menu">
+                    Menu
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#scrollspyAboutMeTech">
@@ -43,9 +54,11 @@ function TopNav() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">
-                  About
-                </a>
+                <Link to={"/about"} className={"nav-Link"}>
+                  <a className="nav-link" href="/about">
+                    Meet The Daddies
+                  </a>
+                </Link>
               </li>
             </Nav>
           </Navbar.Collapse>

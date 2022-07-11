@@ -4,9 +4,9 @@ import React from "react";
 
 // component imports
 import TopNav from "../../components/TopNav/TopNav";
-import Hero from "../../components/Hero/Hero";
-import HomeInfo from "../../components/HomeInfo/HomeInfo";
-import HomeBanner from "../../components/HomeBanner/HomeBanner";
+import Hero from "../../components/HomeComponents/Hero/Hero";
+import HomeInfo from "../../components/HomeComponents/HomeInfo/HomeInfo";
+import HomeBanner from "../../components/HomeComponents/HomeBanner/HomeBanner";
 import Footer from "../../components/Footer/Footer";
 
 function Home() {
