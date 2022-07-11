@@ -8,6 +8,7 @@ import Footer from "../../components/Footer/Footer";
 
 // Page specific imports
 import BeerList from "../../components/MenuComponents/BeerList";
+import FoodList from "../../components/MenuComponents/FoodList";
 
 function Menu() {
   return (
@@ -15,6 +16,7 @@ function Menu() {
       <TopNav />
       <section className="bg-dark text-white">
         <BeerList />
+        <FoodList />
       </section>
       <Footer />
     </>

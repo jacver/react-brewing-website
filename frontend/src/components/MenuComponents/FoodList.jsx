@@ -1,19 +1,19 @@
 import React from "react";
 
-import BeerCard from "./BeerCard/BeerCard";
+import FoodCard from "./FoodCard/FoodCard";
 
-function BeerList() {
+function FoodList() {
   return (
     <>
-      <h1>Beer Menu</h1>
+      <h1>Food Menu</h1>
       <section
         className="card-container d-flex flex-wrap justify-content-center align-items-center"
         style={{ gap: "3rem" }}
       >
-        <BeerCard />
+        <FoodCard />
       </section>
     </>
   );
 }
 
-export default BeerList;
+export default FoodList;

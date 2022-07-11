@@ -18,7 +18,6 @@ function BeerCard() {
     fetch(process.env.REACT_APP_API_URL + beerRestEndpoint + "/")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setBeers(data);
       });
   }, []);
@@ -30,11 +29,8 @@ function BeerCard() {
       ) : (
         beers.map((beer, idx) => {
           return (
-            <Card
-              key={idx}
-              className="beer-card"
-              style={{ width: "30rem", color: "white" }}
-            >
+            <Card key={idx} className="beer-card" style={{ color: "white" }}>
+              <Card.Title></Card.Title>
               <Card.Body className="d-flex" style={{ gap: "1rem" }}>
                 <div className="label-container">
                   <img
@@ -44,23 +40,38 @@ function BeerCard() {
                   />
                 </div>
 
-                <div className="info-rows w-100 d-flex flex-column">
-                  <div className="card-middle-row">
-                    <p style={{ color: "#59ff48", fontSize: "1.5rem" }}>
+                <div className="content-card">
+                  <div className="info-rows w-100 d-flex flex-column">
+                    <div className="card-top-row d-flex flex-row justify-content-between p-1 ">
+                      <p>{beer.beer_type}</p>
+                      <p
+                        className="cost d-flex justify-content-center align-items-center"
+                        style={{ fontSize: "1.75em" }}
+                      >
+                        <span style={{ color: "#59ff48" }}>$</span>
+                        {beer.price}
+                      </p>
+                      <div className="abv-info d-flex">
+                        <p className="vert-text" style={{ color: "#59ff48" }}>
+                          ABV
+                        </p>
+                        <p style={{ fontSize: "1.75em" }}>{beer.abv}%</p>
+                      </div>
+                    </div>
+                    <p
+                      style={{
+                        color: "#59ff48",
+                        fontSize: "1.5rem",
+                        width: "100%",
+                      }}
+                    >
                       {beer.name}
                     </p>
-                    <p>{beer.brewer}</p>
-                  </div>
-                  <div className="card-bottom-row">
-                    <p>{beer.description}</p>
-                  </div>
-                  <div className="card-top-row d-flex flex-row justify-content-between p-1 ">
-                    <p>{beer.beer_type}</p>
-                    <div className="abv-info d-flex">
-                      <p className="vert-text" style={{ color: "#59ff48" }}>
-                        ABV
-                      </p>
-                      <p style={{ fontSize: "1.75em" }}>{beer.abv}</p>
+                    <div className="card-middle-row">
+                      <p>{beer.brewer}</p>
+                    </div>
+                    <div className="card-bottom-row">
+                      <p>{beer.description}</p>
                     </div>
                   </div>
                 </div>

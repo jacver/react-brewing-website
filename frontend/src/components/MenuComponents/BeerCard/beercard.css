@@ -10,12 +10,14 @@
 
 .beer-card {
   background-color: transparent;
+  width: 40%;
   border: none;
   padding: 0;
+  border: 5px solid brown;
 }
 
 .label-container {
-  max-width: 40%;
+  max-width: 30%;
   display: flex;
   max-height: 80%;
   justify-content: center;
@@ -26,6 +28,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .beer-card {
+    width: 100%;
+  }
+
   .label-container {
     display: none;
   }
