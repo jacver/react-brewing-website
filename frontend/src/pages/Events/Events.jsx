@@ -8,10 +8,10 @@ import Footer from "../../components/Footer/Footer";
 function Events() {
   return (
     <div className="">
-      {/* <TopNav /> */}
+      <TopNav />
       <h1>Events</h1>
       <EventCalendar />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
