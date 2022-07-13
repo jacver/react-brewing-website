@@ -35,23 +35,23 @@ function FoodCard() {
               className="menu-card food-item"
               style={{ color: "white" }}
             >
-              <Card.Body className="d-flex flex-column" style={{ gap: "1rem" }}>
-                <div className="food-top-row w-100 d-flex justify-content-between align-items-center">
-                  <div>{food.name}</div>
-                  <div>${food.price}</div>
-                </div>
-                <div className="food-middle-row w-100 d-flex justify-content-between align-items-center">
-                  <div className="food-label-container">
+              <Card.Body className="d-flex p-1" style={{ gap: "1rem" }}>
+                <div className="column-1">
+                  <div className="food-label-container ">
                     <img
                       src={food.image_URL}
                       alt={food.name}
                       className="food-label"
                     />
                   </div>
-                  <div>{food.description}</div>
                 </div>
-                <div className="food-bottom-row w-100 d-flex flex-row-reverse justify-content-between align-items-center">
-                  {food.tags === "none" ? "" : <p>{food.tags}</p>}
+                <div className="column-2 w-100 d-flex flex-column justify-content-between align-items-between">
+                  <div className="food-top-row d-flex justify-content-between align-items-between">
+                    <div>{food.name}</div>
+                    <div>${food.price}</div>
+                  </div>
+                  <div className="food-desc-container">{food.description}</div>
+                  <div className="food-tags align-self-end">{food.tags}</div>
                 </div>
               </Card.Body>
             </Card>

@@ -30,8 +30,7 @@ function BeerCard() {
         beers.map((beer, idx) => {
           return (
             <Card key={idx} className="beer-card" style={{ color: "white" }}>
-              <Card.Title></Card.Title>
-              <Card.Body className="d-flex" style={{ gap: "1rem" }}>
+              <Card.Body className="d-flex p-0" style={{ gap: "1rem" }}>
                 <div className="label-container">
                   <img
                     className="label bg-light w-100"
@@ -40,16 +39,17 @@ function BeerCard() {
                   />
                 </div>
 
-                <div className="content-card">
-                  <div className="info-rows w-100 d-flex flex-column">
+                <div className="content-card w-100">
+                  <div className="info-rows w-100 d-flex flex-column w-100">
                     <div className="card-top-row d-flex flex-row justify-content-between p-1 ">
-                      <p>{beer.beer_type}</p>
                       <p
                         className="cost d-flex justify-content-center align-items-center"
                         style={{ fontSize: "1.75em" }}
                       >
-                        <span style={{ color: "#59ff48" }}>$</span>
-                        {beer.price}
+                        ${beer.price}
+                      </p>
+                      <p style={{ color: "#59ff48", alignSelf: "center" }}>
+                        {beer.beer_type}
                       </p>
                       <div className="abv-info d-flex">
                         <p className="vert-text" style={{ color: "#59ff48" }}>
