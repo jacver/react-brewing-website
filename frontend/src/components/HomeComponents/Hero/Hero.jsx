@@ -15,9 +15,13 @@ function Hero() {
           <h2>BREWING COMPANY</h2>
         </div>
       </section>
-      <div className="hero-scroll" style={{ fontSize: "5rem" }}>
+      <a
+        className="hero-scroll"
+        href="#homeAbout"
+        style={{ fontSize: "5rem", textDecoration: "none", color: "#59ff48" }}
+      >
         <HiChevronDoubleDown />
-      </div>
+      </a>
     </div>
   );
 }
