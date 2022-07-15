@@ -4,7 +4,8 @@ import React from "react";
 
 // Component imports
 import TopNav from "../../components/TopNav/TopNav";
-import AboutContent from "../../components/AboutContent/AboutContent";
+import AboutContent from "../../components/AboutComponents/AboutContent/AboutContent";
+import AboutImagePanel from "../../components/AboutComponents/AboutImagePanel";
 import Footer from "../../components/Footer/Footer";
 
 function About() {
@@ -12,6 +13,7 @@ function About() {
     <>
       <TopNav />
       <AboutContent />
+      <AboutImagePanel />
       <Footer />
     </>
   );
