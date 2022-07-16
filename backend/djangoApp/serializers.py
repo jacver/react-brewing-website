@@ -7,7 +7,7 @@ class BeerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Beer
         # define metadata needed for model below
-        fields = ('id', 'label_URL', 'beer_type', 'beer_container', 'price', 'brewer', 'description', 'abv',)
+        fields = ('id', 'name', 'label_URL', 'beer_type', 'beer_container', 'price', 'brewer', 'description', 'abv',)
 
 class FoodSerializer(serializers.ModelSerializer):
     class Meta:
@@ -17,7 +17,7 @@ class FoodSerializer(serializers.ModelSerializer):
 class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
-        fields = ('id', 'event_name', 'event_URL', 'date', 'description',)
+        fields = ('id', 'title', 'url', 'start', 'end', 'description',)
 
 class MerchandiseSerializer(serializers.ModelSerializer):
     class Meta:
