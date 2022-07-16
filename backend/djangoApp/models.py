@@ -72,7 +72,8 @@ class Food(models.Model):
                             )
     tags = models.CharField(
                             default="Seperated by comma - ex: gluten free, vegan, dairy free",   
-                            max_length=200
+                            max_length=200,
+                            blank=True,
                             )
     def __str__(self):
         #reference name of food item
@@ -90,13 +91,13 @@ class Event(models.Model):
     start = models.DateTimeField(
                             # Event date/time
                             auto_now= False,
-                            auto_now_add=True,
+                            auto_now_add=False,
                             blank=True,
                             )
     end = models.DateTimeField(
                             # Event date/time
                             auto_now= False,
-                            auto_now_add=True,
+                            auto_now_add=False,
                             blank=True,
                             )
 
