@@ -19,6 +19,7 @@ function BeerCard() {
       .then((res) => res.json())
       .then((data) => {
         setBeers(data);
+        console.log(data);
       });
   }, []);
 

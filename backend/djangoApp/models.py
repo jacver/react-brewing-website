@@ -79,19 +79,27 @@ class Food(models.Model):
         return self.name
 
 class Event(models.Model):
-    event_name = models.CharField(
+    title = models.CharField(
                             default="Event Name",   
                             max_length=200
                             )
-    event_URL = models.TextField(
+    url = models.TextField(
                             # URL for event/food truck/vendor
                             default="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
                             )
-    date = models.DateTimeField(
+    start = models.DateTimeField(
                             # Event date/time
                             auto_now= False,
-                            auto_now_add=False
+                            auto_now_add=True,
+                            blank=True,
                             )
+    end = models.DateTimeField(
+                            # Event date/time
+                            auto_now= False,
+                            auto_now_add=True,
+                            blank=True,
+                            )
+
     description = models.TextField(
                             # Event Description
                             default="Join us for..."
