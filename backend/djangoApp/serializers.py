@@ -17,7 +17,7 @@ class FoodSerializer(serializers.ModelSerializer):
 class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
-        fields = ('id', 'title', 'url', 'start', 'end' 'description',)
+        fields = ('id', 'title', 'url', 'start', 'end', 'description',)
 
 class MerchandiseSerializer(serializers.ModelSerializer):
     class Meta:
