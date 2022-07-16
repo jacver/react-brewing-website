@@ -30,7 +30,8 @@ function EventCalendar() {
         plugins={[dayGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"
         events={{ events }}
-        eventBackgroundColor="green"
+        eventBackgroundColor="transparent"
+        eventBorderColor="transparent"
         displayEventTime="True"
         displayEventEnd="True"
         // eventMouseEnter={handleEventMouseEnter} // TO-DO CONTENT INJECTION TOOLTIP

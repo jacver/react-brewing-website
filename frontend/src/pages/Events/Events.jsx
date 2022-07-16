@@ -7,7 +7,7 @@ import Footer from "../../components/Footer/Footer";
 
 function Events() {
   return (
-    <div className="">
+    <div className="bg-dark">
       <TopNav />
       <h1>Events</h1>
       <EventCalendar />

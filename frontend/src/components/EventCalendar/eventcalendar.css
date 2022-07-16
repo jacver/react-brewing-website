@@ -1,6 +1,40 @@
 /* frontend/src/components/EventCalendar/eventcalendar.css */
 
+/* DOCUMENTATION FOR OVERWRITING DEFAULT PROPERTIES: https://fullcalendar.io/docs/css-customization */
+
 .calendar-container {
-  /* max-width: 80vw; */
-  /* margin: 0 auto; */
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+/* THESE CLASSES SEPERATED TO ALLOW FOR EASIER CHANGES TO SEE EXACT LOCATION ON CALENDAR */
+
+.fc-header-toolbar {
+  color: white;
+}
+
+.fc-col-header-cell-cushion {
+  color: white;
+}
+
+.fc-daygrid-day-number {
+  color: white;
+}
+
+.fc-daygrid-day-bg::before {
+  background-color: white;
+}
+
+.fc-event-today {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.fc-event-today:hover {
+  color: white;
+  text-decoration: none;
+}
+
+tr {
+  background-color: #565656;
 }
