@@ -28,7 +28,7 @@ function EventCalendar() {
     <div className="calendar-container ">
       <FullCalendar
         plugins={[dayGridPlugin, interactionPlugin]}
-        initialView="dayGridMonth"
+        initialView={window.innerWidth <= 765 ? "dayGridDay" : "dayGridMonth"} // detect screen size and render responsively
         events={{ events }}
         eventBackgroundColor="transparent"
         eventBorderColor="transparent"
