@@ -25,7 +25,8 @@
   background-color: white;
 }
 
-.fc-event-today {
+.fc-event-today,
+.fc-event {
   color: white;
   font-size: 1.25rem;
 }
