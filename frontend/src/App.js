@@ -11,6 +11,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Menu from "./pages/Menu/Menu";
 import Events from "./pages/Events/Events";
+import Tours from "./pages/Tours/Tours";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/events" element={<Events />} />
+      </Routes>
+      <Routes>
+        <Route path="/tours" element={<Tours />} />
       </Routes>
     </div>
   );
