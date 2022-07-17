@@ -4,16 +4,20 @@ import React from "react";
 
 // Component Imports
 import TopNav from "../../components/TopNav/TopNav";
-import TourBooking from "../../components/Tours/TourBooking";
+import TourBookingInfo from "../../components/Tours/TourBookingInfo";
 import DatePicker from "../../components/Tours/DatePicker";
+import TourInputForms from "../../components/Tours/TourInputForms";
 import Footer from "../../components/Footer/Footer";
 
 function Tours() {
   return (
-    <div>
+    <div className="bg-dark text-white">
       <TopNav />
-      <TourBooking />
-      <DatePicker />
+      <TourBookingInfo />
+      <div className="tour-forms d-flex flex-column flex-md-row justify-content-evenly align-items-center pb-5">
+        <DatePicker />
+        <TourInputForms />
+      </div>
       <Footer />
     </div>
   );
