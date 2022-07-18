@@ -19,7 +19,7 @@ function DatePicker() {
   // Fetch Django Dates
   const ToursRestEndpoint = "tours";
 
-  const [Tours, setTours] = useState([]);
+  const [Tours, setTours] = useState();
 
   useEffect(() => {
     fetch(process.env.REACT_APP_API_URL + ToursRestEndpoint + "/")
@@ -30,29 +30,35 @@ function DatePicker() {
       });
   }, []);
 
+  console.log(Tours);
+
   return (
     <div>
-      <Flatpickr
-        value={date}
-        onChange={handleDateChange}
-        options={{
-          inline: true, // calendar always open
-          minDate: "today", // disable dates < today
-          altInput: true, // allows alt formatting
-          altFormat: "F j, Y", // alt formatting
-          dateFormat: "m/d/Y ", // visual formatting
-          disable: [
-            function (date) {
-              // return true to disable
-              return date.getDay() === 0 || date.getDay() === 6;
+      {!Tours ? (
+        <h1>Retrieving Tour Dates</h1>
+      ) : (
+        <Flatpickr
+          value={date}
+          onChange={handleDateChange}
+          options={{
+            inline: true, // calendar always open
+            minDate: "today", // disable dates < today
+            altInput: true, // allows alt formatting
+            altFormat: "F j, Y", // alt formatting
+            dateFormat: "m/d/Y ", // visual formatting
+            disable: [
+              function (date) {
+                // return true to disable
+                return date.getDay() === 0 || date.getDay() === 6;
+              },
+              Tours[0].date, // THIS WORKS TO DISABLE A DAY, NEED TO FEED ALL DATES
+            ],
+            locale: {
+              firstDayOfWeek: 1, // start week on Monday
             },
-            Tours[0].date, // THIS WORKS TO DISABLE A DAY
-          ],
-          locale: {
-            firstDayOfWeek: 1, // start week on Monday
-          },
-        }}
-      />
+          }}
+        />
+      )}
     </div>
   );
 }
