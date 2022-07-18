@@ -5,7 +5,7 @@ from django.shortcuts import render
 from rest_framework import generics
 from rest_framework import status
 
-from .models import Beer, Food, Event, Merchandise
+from .models import Beer, Food, Event, Merchandise, TourBooking
 from .serializers import *
 
 
@@ -51,5 +51,15 @@ def merchandise_list(request):
     merchandise = Merchandise.objects.all().values()
     merchandise_list = list(merchandise)
     return JsonResponse(merchandise_list, safe=False)
+
+## Tour Booking ## 
+class TourBookingList(generics.ListCreateAPIView):
+    queryset = TourBooking.objects.all()
+    serializer_class = TourBookingSerializer
+
+def tours_list(request):
+    tours = TourBooking.objects.all().values()
+    tours_list = list(tours)
+    return JsonResponse(tours_list, safe=False)
 
 

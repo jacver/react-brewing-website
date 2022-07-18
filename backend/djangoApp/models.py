@@ -137,3 +137,18 @@ class Merchandise(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class TourBooking(models.Model):
+    date = models.CharField(
+                            default="date",
+                            max_length=10,
+                            )
+    email = models.EmailField(
+                            max_length=254,
+                            default="",
+                            blank=False
+                            )
+
+    def __str__(self):
+        return self.date
