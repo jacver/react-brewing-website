@@ -1,7 +1,7 @@
 // src/components/Tours/DatePicker.jsx
 
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // flatpickr imports
 import "flatpickr/dist/themes/dark.css";
@@ -15,6 +15,20 @@ function DatePicker() {
     setDate(dateStr);
     console.log(dateStr);
   };
+
+  // Fetch Django Dates
+  const ToursRestEndpoint = "tours";
+
+  const [Tours, setTours] = useState([]);
+
+  useEffect(() => {
+    fetch(process.env.REACT_APP_API_URL + ToursRestEndpoint + "/")
+      .then((res) => res.json())
+      .then((data) => {
+        setTours(data);
+        console.log(data);
+      });
+  }, []);
 
   return (
     <div>
@@ -32,7 +46,7 @@ function DatePicker() {
               // return true to disable
               return date.getDay() === 0 || date.getDay() === 6;
             },
-            // after fetching db dates, insert here
+            Tours[0].date, // THIS WORKS TO DISABLE A DAY
           ],
           locale: {
             firstDayOfWeek: 1, // start week on Monday
