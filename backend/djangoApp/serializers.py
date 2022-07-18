@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Beer, Food, Event, Merchandise
+from .models import Beer, Food, Event, Merchandise, TourBooking
 
 # add serializers below
 
@@ -23,3 +23,8 @@ class MerchandiseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Merchandise
         fields = ('id', 'name', 'price', 'description', 'image_URL', 'on_sale', 'in_stock' )
+
+class TourBookingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TourBooking
+        fields = ('id', 'date', 'email')
