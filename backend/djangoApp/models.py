@@ -147,7 +147,7 @@ class TourBooking(models.Model):
     email = models.EmailField(
                             max_length=254,
                             default="",
-                            blank=False
+                            blank=True
                             )
 
     def __str__(self):
