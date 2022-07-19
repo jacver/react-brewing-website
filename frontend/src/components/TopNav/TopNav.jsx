@@ -51,9 +51,11 @@ function TopNav() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#scrollspyContact">
-                  Tours
-                </a>
+                <Link to={"/tours"} className={"nav-Link"}>
+                  <a className="nav-link" href="/tours">
+                    Tours
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link to={"/about"} className={"nav-Link"}>
