@@ -27,4 +27,4 @@ class MerchandiseSerializer(serializers.ModelSerializer):
 class TourBookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = TourBooking
-        fields = ('id', 'date', 'email')
+        fields = ('id', 'date', 'email', 'additional_info', 'reserved')

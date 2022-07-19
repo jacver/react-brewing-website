@@ -141,7 +141,7 @@ class Merchandise(models.Model):
 
 class TourBooking(models.Model):
     date = models.CharField(
-                            default="date",
+                            default="mm/dd/yyyy",
                             max_length=10,
                             )
     email = models.EmailField(
@@ -149,6 +149,14 @@ class TourBooking(models.Model):
                             default="",
                             blank=True
                             )
+    additional_info = models.CharField(
+                            default="additional information",
+                            blank=True,
+                            max_length=254,
+    )
+    reserved = models.BooleanField(
+                            default=False
+    )
 
     def __str__(self):
         return self.date
