@@ -12,8 +12,8 @@ function DatePicker() {
   const [date, setDate] = useState();
 
   const handleDateChange = (selectedDates, dateStr, instance) => {
-    setDate(dateStr);
     console.log(dateStr);
+    setDate(dateStr);
   };
 
   // Fetch Django Dates
@@ -26,11 +26,8 @@ function DatePicker() {
       .then((res) => res.json())
       .then((data) => {
         setTours(data);
-        // console.log(data);
       });
   }, []);
-
-  // console.log(Tours);
 
   return (
     <div>
@@ -48,10 +45,11 @@ function DatePicker() {
             dateFormat: "m/d/Y ", // visual formatting
             disable: [
               function (date) {
-                // return true to disable
+                // return true to disable day - disabling Sat & Sun w/ this function
                 return date.getDay() === 0 || date.getDay() === 6;
               },
               function (date) {
+                // console.log(date);
                 Tours.map((tour) => {
                   // Format date object to mm/dd/yyyy for comparison
                   let formattedDate =
@@ -64,7 +62,7 @@ function DatePicker() {
                   // If formatted date and tour.date are equal AND boolean TRUE for reserved, block date on calendar
                   if (formattedDate === tour.date && tour.reserved) {
                     // console.log("RESERVED DAY: ", tour.date);
-                    return tour.date;
+                    return true;
                   } else {
                     // console.log("UNRESERVED DAY: ", tour.date);
                     return false;
