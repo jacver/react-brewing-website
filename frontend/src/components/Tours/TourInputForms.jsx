@@ -3,6 +3,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
+// Axios for post
+import axios from "axios";
+
 // bootstrap imports
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -10,24 +13,30 @@ import Form from "react-bootstrap/Form";
 // flatpickr imports
 import "flatpickr/dist/themes/dark.css";
 import Flatpickr from "react-flatpickr";
-import { FloatingLabel } from "react-bootstrap";
-import axios from "axios";
 // flatpickr docs: https://flatpickr.js.org/events/#events
 
-function TourInputForms() {
-  // Fetching Tour Info
-  const ToursRestEndpoint = "tours";
+// =========================================
+// ====================FORM NOTES===========
+// =========================================
+//
+// 1. Initial State set - forms cleared out
 
-  const [Tours, setTours] = useState();
+// 2. Tour dates are passed as props
+// //  2a. Tour state managed
+// //  2b. Determine open dates using fetched tours.date
 
-  useEffect(() => {
-    fetch(process.env.REACT_APP_API_URL + ToursRestEndpoint + "/")
-      .then((res) => res.json())
-      .then((data) => {
-        setTours(data);
-      });
-  }, []);
+// 3. Flatpickr used to determine available dates - disables dates that already have a reservation
 
+// 4. Email address and additional information set by input
+
+// 5. Reserved boolean set on submit
+
+// HELPER FUNCTIONS:
+// // HandleDateChange - sets inputs for step 3
+// // handleChange - sets inputs for step 4
+// // handleSubmit - post form - don't prevent default so that calendar is forced to re-render with new information
+
+function TourInputForms({ Tours }) {
   // Initial State Management
   const initialState = {
     date: "",
@@ -36,6 +45,15 @@ function TourInputForms() {
     reserved: false,
   };
   const [details, setDetails] = useState(initialState);
+
+  // Initialize empty date array - will be passed to date picker's disable config to block out reserved dates
+  let dateArray = [];
+
+  // map through Tour Obj to get the dates
+  Tours.map((tourObj) => {
+    // push date strings into date array
+    dateArray.push(tourObj.date);
+  });
 
   // Date Picker State Mgmt
   const [date, setDate] = useState("");
@@ -99,28 +117,7 @@ function TourInputForms() {
                       // return true to disable day - disabling Sat & Sun w/ this function
                       return date.getDay() === 0 || date.getDay() === 6;
                     },
-                    function (date) {
-                      // console.log(date);
-                      Tours.map((tour) => {
-                        // Format date object to mm/dd/yyyy for comparison
-                        let formattedDate =
-                          ("0" + (date.getMonth() + 1)).slice(-2) +
-                          "/" +
-                          ("0" + date.getDate()).slice(-2) +
-                          "/" +
-                          date.getFullYear();
-
-                        // If formatted date and tour.date are equal AND boolean TRUE for reserved, block date on calendar
-                        if (formattedDate === tour.date && tour.reserved) {
-                          // console.log("RESERVED DAY: ", tour.date);
-                          return true;
-                        } else {
-                          // console.log("UNRESERVED DAY: ", tour.date);
-                          return false;
-                        }
-                      });
-                    },
-                    // Tours[1].date, // THIS WORKS TO DISABLE A DAY, NEED TO FEED ALL DATES
+                    ...dateArray,
                   ],
                   locale: {
                     firstDayOfWeek: 1, // start week on Monday
