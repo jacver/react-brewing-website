@@ -5,7 +5,7 @@ import React from "react";
 // Component Imports
 import TopNav from "../../components/TopNav/TopNav";
 import TourBookingInfo from "../../components/Tours/TourBookingInfo";
-import DatePicker from "../../components/Tours/DatePicker";
+// import DatePicker from "../../components/Tours/DatePicker";
 import TourInputForms from "../../components/Tours/TourInputForms";
 import Footer from "../../components/Footer/Footer";
 
@@ -15,7 +15,7 @@ function Tours() {
       <TopNav />
       <TourBookingInfo />
       <div className="tour-forms d-flex flex-column flex-md-row justify-content-evenly align-items-center pb-5">
-        <DatePicker />
+        {/* <DatePicker /> */}
         <TourInputForms />
       </div>
       <Footer />

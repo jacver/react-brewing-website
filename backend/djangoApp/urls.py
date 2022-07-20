@@ -8,5 +8,6 @@ urlpatterns = [
     path("merchandise/", views.MerchandiseList.as_view(), name="merchandise_list"),
 
     path("tours/", views.TourBookingList.as_view(), name="tour_list"),
-    path("tours/<int:pk>", views.TourBookingCRUD.as_view(), name="tour_detail")
+    # might not need create route -- / after tours can do it automatically
+    # path("tours/create", views.TourBookingList.as_view(), name="tour_detail")
 ]

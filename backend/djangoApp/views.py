@@ -57,9 +57,9 @@ class TourBookingList(generics.ListCreateAPIView):
     queryset = TourBooking.objects.all()
     serializer_class = TourBookingSerializer
 
-class TourBookingCRUD(generics.RetrieveUpdateDestroyAPIView):
-    queryset = TourBooking.objects.all()
-    serializer_class = TourBookingSerializer
+# class TourBookingCRUD(generics.RetrieveUpdateDestroyAPIView):
+#     queryset = TourBooking.objects.all()
+#     serializer_class = TourBookingSerializer
 
 def tours_list(request):
     tours = TourBooking.objects.all().values()
