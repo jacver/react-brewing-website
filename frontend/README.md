@@ -1,5 +1,8 @@
 neon green: 59ff48
 
+ACCESSABILITY COMPLIANCE:
+95% via https://www.accessibilitychecker.org/#popup_rate
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
