@@ -11,24 +11,18 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Menu from "./pages/Menu/Menu";
 import Events from "./pages/Events/Events";
+import Tours from "./pages/Tours/Tours";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Welcome />} />
-      </Routes>
-      <Routes>
         <Route path="/home" element={<Home />} />
-      </Routes>
-      <Routes>
         <Route path="/about" element={<About />} />
-      </Routes>
-      <Routes>
         <Route path="/menu" element={<Menu />} />
-      </Routes>
-      <Routes>
         <Route path="/events" element={<Events />} />
+        <Route path="/tours" element={<Tours />} />
       </Routes>
     </div>
   );
