@@ -40,7 +40,7 @@ function FoodCard() {
                   <div className="food-label-container ">
                     <img
                       src={food.image_URL}
-                      alt={food.name}
+                      alt="" // alt tag empty as adjacent text describes item - https://www.w3.org/WAI/tutorials/images/decorative/
                       className="food-label"
                     />
                   </div>

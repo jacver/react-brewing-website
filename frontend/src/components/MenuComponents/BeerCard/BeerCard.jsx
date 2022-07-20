@@ -35,7 +35,7 @@ function BeerCard() {
                 <div className="label-container">
                   <img
                     className="label bg-light w-100"
-                    alt="Beer Label"
+                    alt="" // alt tag empty as adjacent text describes item - https://www.w3.org/WAI/tutorials/images/decorative/
                     src={beer.label_URL}
                   />
                 </div>
