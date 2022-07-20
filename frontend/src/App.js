@@ -18,20 +18,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Welcome />} />
-      </Routes>
-      <Routes>
         <Route path="/home" element={<Home />} />
-      </Routes>
-      <Routes>
         <Route path="/about" element={<About />} />
-      </Routes>
-      <Routes>
         <Route path="/menu" element={<Menu />} />
-      </Routes>
-      <Routes>
         <Route path="/events" element={<Events />} />
-      </Routes>
-      <Routes>
         <Route path="/tours" element={<Tours />} />
       </Routes>
     </div>
