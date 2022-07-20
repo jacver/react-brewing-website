@@ -48,16 +48,25 @@ function Welcome() {
       </div>
       <div className="socialsWrapper w-50" style={{ margin: "0 auto" }}>
         <div className="socialsRow d-flex align-items-center justify-content-center gap-5 fs-4">
-          <a className="socials-icon" href="https://github.com/jacver">
+          <a
+            className="socials-icon"
+            href="https://github.com/jacver"
+            aria-label="Link to personal GitHub page"
+          >
             <FaGithub />
           </a>
           <a
             className="socials-icon"
             href="https://www.linkedin.com/in/jacobvernau/"
+            aria-label="Link to LinkedIn page"
           >
             <FaLinkedin />
           </a>
-          <a className="socials-icon" href="https://www.jacobvernau.com/">
+          <a
+            className="socials-icon"
+            href="https://www.jacobvernau.com/"
+            aria-label="Link to personal portfolio"
+          >
             <FaRegUser />
           </a>
         </div>
