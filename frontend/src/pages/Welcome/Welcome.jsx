@@ -15,7 +15,7 @@ function Welcome() {
             style={{ width: "100%" }}
             className="logo"
             src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"
-            alt="logo"
+            alt=""
           />
         </div>
         <h1>Welcome, dude</h1>
@@ -25,7 +25,7 @@ function Welcome() {
         <p>Weekdays: 11am - 10pm</p>
         <p>Weekends: 10am - 11pm</p>
         <p>
-          <a href="/">Tours</a> offered on weekdays from 11am - 12pm and 2pm-3pm
+          <a href="/tours">Tours</a> offered on weekdays from 11am - 12pm
         </p>
       </div>
       <div className="ageAuth mb-5">
