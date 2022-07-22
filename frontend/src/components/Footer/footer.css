@@ -10,10 +10,6 @@
   justify-content: space-evenly;
 }
 
-.footer-column {
-  width: 20rem;
-}
-
 .contact-wrapper a {
   text-decoration: none;
   color: white;
@@ -21,16 +17,4 @@
 
 .contact-wrapper a:hover {
   color: #59ff48;
-}
-
-.hours-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .footer-wrapper {
-    flex-direction: column;
-  }
 }

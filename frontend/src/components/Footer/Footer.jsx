@@ -8,8 +8,8 @@ import { FaGithub, FaLinkedin, FaRegUser } from "react-icons/fa";
 function Footer() {
   return (
     <footer>
-      <div className="footer-wrapper bg-dark text-white p-5 pb-0">
-        <div className="footer-content-row d-flex justify-content-evenly align-items-evenly">
+      <div className="footer-wrapper bg-dark text-white p-5 pb-3">
+        <div className="footer-content-row d-flex flex-column flex-md-row justify-content-evenly align-items-evenly">
           <div className="contact-wrapper d-flex flex-column justify-content-start align-items-start">
             <p>Contact us:</p>
             <a aria-label="Business phone number" href="tel:123-456-7890">
@@ -33,7 +33,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-dark text-muted d-flex justify-content-evenly align-items-center p-5 pt-0">
+      <div className="icons-row bg-dark text-muted d-flex justify-content-evenly align-items-center p-2">
         <p className="mb-0">Created by Jacob Vernau</p>
         <div className="socialsRow d-flex align-items-center justify-content-center gap-5 fs-4">
           <a
