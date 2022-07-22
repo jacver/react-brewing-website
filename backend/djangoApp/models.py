@@ -41,8 +41,8 @@ class Beer(models.Model):
                             )
     abv = models.DecimalField(
                             # Alcohol by volume, not to exceed 4 digits i.e., 7.35
-                            max_digits=4,
-                            decimal_places=2    
+                            max_digits=3,
+                            decimal_places=1    
                             )
     beer_of_the_month = models.BooleanField(
                             default=False
