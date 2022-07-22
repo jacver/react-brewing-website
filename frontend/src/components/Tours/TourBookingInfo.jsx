@@ -7,9 +7,9 @@ function TourBookingInfo() {
     <div>
       <div
         className="d-flex flex-column justify-content-start align-items-start"
-        style={{ textAlign: "left", margin: "2rem" }}
+        style={{ textAlign: "left", margin: "3rem" }}
       >
-        <h2>
+        <h2 className="vintage-font">
           TOUR <br />
           INFORMATION
         </h2>

@@ -7,7 +7,7 @@ function HomeInfo() {
   return (
     <section className="homeInfoWrapper">
       <div className="home-inner d-flex flex-column justify-content-evenly align-items-evenly h-100">
-        <h2>Welcome to the Slick Daddy Club</h2>
+        <h2 className="vintage-font">Welcome to the Slick Daddy Club</h2>
         <div className="homeInfoButtonsContainer d-flex flex-row justify-content-evenly align-items-around h-30">
           <a href="/menu" className="btnAnimation btn-up w-">
             EAT & DRINK
