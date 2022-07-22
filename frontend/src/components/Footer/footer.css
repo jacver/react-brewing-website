@@ -18,3 +18,19 @@
 .contact-wrapper a:hover {
   color: #59ff48;
 }
+
+@media only screen and (max-width: 700px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content-row {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+}
