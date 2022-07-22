@@ -6,11 +6,7 @@
   width: 100vw;
 
   /* set image url and gradient overlay */
-  background: linear-gradient(
-      to bottom,
-      rgba(152, 153, 158, 0.52),
-      rgba(75, 72, 72, 0.73)
-    ),
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
     url(https://i.imgur.com/7pFMD4w.jpg) no-repeat center center fixed;
 
   /* crossbrowser support  */
@@ -25,9 +21,21 @@
 }
 
 .welcomeBannerText {
-  letter-spacing: 0.75rem;
-  line-height: 5rem;
+  /* font styling on banner */
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  line-height: 8rem;
   font-family: Vintages;
+
+  padding-top: 15vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .welcomeBannerText {
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    line-height: 4rem;
+  }
 }
 
 /* button animations */
@@ -43,8 +51,8 @@
 
 .box {
   /* sizing */
-  width: 60px;
-  height: 45px;
+  width: 90px;
+  height: 65px;
   padding: 25px;
 
   /* flex */
@@ -53,7 +61,7 @@
   align-items: center;
 
   /* font */
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 700;
   color: #fff;
 
@@ -83,10 +91,10 @@
 /* Over 21 button settings */
 
 .box-overage:before {
-  content: "Skol,";
+  content: "Green";
   position: absolute;
   top: 0;
-  background: white;
+  background: #39ff14;
   color: black;
   width: 100%;
   height: 100%;
@@ -99,16 +107,16 @@
 
 .box-overage:nth-child(2)::before {
   transform: translateY(-100%);
-  content: "Daddy!";
+  content: "Light!";
 }
 
 /* Under 21 button settings */
 
 .box-underage:before {
-  content: "Not";
+  content: "Red";
   position: absolute;
   top: 0;
-  background: white;
+  background: red;
   color: black;
   width: 100%;
   height: 100%;
@@ -121,7 +129,7 @@
 
 .box-underage:nth-child(2)::before {
   transform: translateY(100%);
-  content: "Today!";
+  content: "Light!";
 }
 
 /* End age gateway settings */
