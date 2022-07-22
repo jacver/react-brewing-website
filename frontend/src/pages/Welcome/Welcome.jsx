@@ -18,15 +18,16 @@ function Welcome() {
             alt=""
           />
         </div>
-        <h1>Welcome, dude</h1>
+        <h1 className="welcomeBannerText">
+          WELCOME TO THE <br />
+          SLICK DADDY CLUB
+        </h1>
       </div>
       <div className="welcomeContent mb-5">
         <p>Taproom & Outdoor Seating Available</p>
         <p>Weekdays: 11am - 10pm</p>
         <p>Weekends: 10am - 11pm</p>
-        <p>
-          <a href="/tours">Tours</a> offered on weekdays from 11am - 12pm
-        </p>
+        <p>Tours offered on weekdays from 11am - 12pm</p>
       </div>
       <div className="ageAuth mb-5">
         <p>To see more, please verify you are of legal drinking age</p>
