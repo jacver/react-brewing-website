@@ -3,11 +3,7 @@ import React from "react";
 function HomeBanner() {
   return (
     <div
-      style={{
-        backgroundImage:
-          "url(https://www.toptal.com/designers/subtlepatterns/uploads/cartographer.png)",
-      }}
-      className="homeBannerContainer d-flex flex-column justify-content-center align-items-center p-5 bg-dark text-white"
+      className="homeBannerContainer d-flex flex-column justify-content-center align-items-center p-5 bg-dark text-white fs-5"
       id="homeAbout"
     >
       <h2 style={{ color: "#59ff48" }}>ABOUT US</h2>
