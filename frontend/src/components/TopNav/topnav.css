@@ -1,5 +1,16 @@
 /* frontend/src/components/TopNav/topnav.css */
 
-.nav-Link {
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+}
+
+li a {
+  color: lightgrey;
   text-decoration: none;
+}
+
+li a:hover {
+  color: lightslategray;
 }

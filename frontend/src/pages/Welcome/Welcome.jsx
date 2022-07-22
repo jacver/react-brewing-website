@@ -15,18 +15,19 @@ function Welcome() {
             style={{ width: "100%" }}
             className="logo"
             src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"
-            alt="logo"
+            alt=""
           />
         </div>
-        <h1>Welcome, dude</h1>
+        <h1 className="welcomeBannerText">
+          WELCOME TO THE <br />
+          SLICK DADDY CLUB
+        </h1>
       </div>
       <div className="welcomeContent mb-5">
         <p>Taproom & Outdoor Seating Available</p>
         <p>Weekdays: 11am - 10pm</p>
         <p>Weekends: 10am - 11pm</p>
-        <p>
-          <a href="/">Tours</a> offered on weekdays from 11am - 12pm and 2pm-3pm
-        </p>
+        <p>Tours offered on weekdays from 11am - 12pm</p>
       </div>
       <div className="ageAuth mb-5">
         <p>To see more, please verify you are of legal drinking age</p>
@@ -48,16 +49,25 @@ function Welcome() {
       </div>
       <div className="socialsWrapper w-50" style={{ margin: "0 auto" }}>
         <div className="socialsRow d-flex align-items-center justify-content-center gap-5 fs-4">
-          <a className="socials-icon" href="https://github.com/jacver">
+          <a
+            className="socials-icon"
+            href="https://github.com/jacver"
+            aria-label="Link to personal GitHub page"
+          >
             <FaGithub />
           </a>
           <a
             className="socials-icon"
             href="https://www.linkedin.com/in/jacobvernau/"
+            aria-label="Link to LinkedIn page"
           >
             <FaLinkedin />
           </a>
-          <a className="socials-icon" href="https://www.jacobvernau.com/">
+          <a
+            className="socials-icon"
+            href="https://www.jacobvernau.com/"
+            aria-label="Link to personal portfolio"
+          >
             <FaRegUser />
           </a>
         </div>

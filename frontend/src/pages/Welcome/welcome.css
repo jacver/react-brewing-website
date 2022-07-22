@@ -24,6 +24,12 @@
   text-decoration: none;
 }
 
+.welcomeBannerText {
+  letter-spacing: 0.75rem;
+  line-height: 5rem;
+  font-family: Vintages;
+}
+
 /* button animations */
 
 /* CSS Button reference: https://cssbuttons.app/?utm_source=toolkit.addy.codes*/

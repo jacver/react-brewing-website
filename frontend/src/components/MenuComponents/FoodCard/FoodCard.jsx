@@ -40,15 +40,15 @@ function FoodCard() {
                   <div className="food-label-container ">
                     <img
                       src={food.image_URL}
-                      alt={food.name}
+                      alt="" // alt tag empty as adjacent text describes item - https://www.w3.org/WAI/tutorials/images/decorative/
                       className="food-label"
                     />
                   </div>
                 </div>
                 <div className="column-2 w-100 d-flex flex-column justify-content-between align-items-between">
                   <div className="food-top-row d-flex justify-content-between align-items-between">
-                    <div>{food.name}</div>
-                    <div>${food.price}</div>
+                    <div style={{ fontSize: "1.75rem" }}>${food.price}</div>
+                    <div style={{ fontSize: "1.75rem" }}>{food.name}</div>
                   </div>
                   <div className="food-desc-container">{food.description}</div>
                   <div className="food-tags align-self-end">{food.tags}</div>

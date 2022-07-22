@@ -24,6 +24,8 @@ function EventCalendar() {
       });
   }, []);
 
+  // TO DO - accessability concerns around fetched event URLs not having aria-labels
+
   return (
     <div className="calendar-container ">
       <FullCalendar

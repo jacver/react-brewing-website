@@ -5,15 +5,9 @@
   width: 100%;
   /* Height of the footer*/
   min-height: 20vh;
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/ep_naturalblack.png");
-  /* background-size: 100% 100%; */
 
   /* flex properties */
   justify-content: space-evenly;
-}
-
-.footer-column {
-  width: 20rem;
 }
 
 .contact-wrapper a {
@@ -23,16 +17,4 @@
 
 .contact-wrapper a:hover {
   color: #59ff48;
-}
-
-.hours-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .footer-wrapper {
-    flex-direction: column;
-  }
 }

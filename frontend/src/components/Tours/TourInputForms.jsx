@@ -1,7 +1,7 @@
 // frontend/src/components/Tours/TourInputForms.jsx
 
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // Axios for post
 import axios from "axios";
@@ -59,6 +59,7 @@ function TourInputForms({ Tours }) {
   const [date, setDate] = useState("");
 
   // Date Change Handler
+  // In current form, selectedDates and instance are unused, but keep them as a reminder of possible arguments. Console.log() for helpful data
   const handleDateChange = (selectedDates, dateStr, instance) => {
     setDate(dateStr);
   };
