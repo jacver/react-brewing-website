@@ -47,8 +47,8 @@ function FoodCard() {
                 </div>
                 <div className="column-2 w-100 d-flex flex-column justify-content-between align-items-between">
                   <div className="food-top-row d-flex justify-content-between align-items-between">
-                    <div style={{ fontSize: "1.75rem" }}>{food.name}</div>
                     <div style={{ fontSize: "1.75rem" }}>${food.price}</div>
+                    <div style={{ fontSize: "1.75rem" }}>{food.name}</div>
                   </div>
                   <div className="food-desc-container">{food.description}</div>
                   <div className="food-tags align-self-end">{food.tags}</div>
