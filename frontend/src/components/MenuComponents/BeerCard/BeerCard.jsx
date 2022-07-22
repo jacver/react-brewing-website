@@ -19,7 +19,7 @@ function BeerCard() {
       .then((res) => res.json())
       .then((data) => {
         setBeers(data);
-        console.log(data);
+        // console.log(data);
       });
   }, []);
 
@@ -49,31 +49,35 @@ function BeerCard() {
                       >
                         ${beer.price}
                       </p>
-                      <p style={{ color: "#59ff48", alignSelf: "center" }}>
+                      <p style={{ color: "#59ff48", fontSize: "1.75em" }}>
                         {beer.beer_type}
                       </p>
-                      <div className="abv-info d-flex">
-                        <p className="vert-text" style={{ color: "#59ff48" }}>
-                          ABV
-                        </p>
-                        <p style={{ fontSize: "1.75em" }}>{beer.abv}%</p>
-                      </div>
                     </div>
                     <p
                       style={{
                         color: "#59ff48",
-                        fontSize: "1.5rem",
+                        fontSize: "1.75rem",
                         width: "100%",
                       }}
                     >
                       {beer.name}
                     </p>
+
                     <div className="card-middle-row">
                       <p>{beer.brewer}</p>
                     </div>
-                    <div className="card-bottom-row">
+                    <div className="card-bottom-row p-2">
                       <p>{beer.description}</p>
                     </div>
+                  </div>
+                  <div
+                    className="abv-info d-flex justify-content-center align-items-center "
+                    style={{ gap: "5%" }}
+                  >
+                    <p className="" style={{ color: "#59ff48" }}>
+                      ABV
+                    </p>
+                    <p style={{ fontSize: "1.75em" }}>{beer.abv}%</p>
                   </div>
                 </div>
               </Card.Body>
