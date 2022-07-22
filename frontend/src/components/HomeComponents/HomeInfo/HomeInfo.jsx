@@ -40,7 +40,7 @@ function HomeInfo() {
 
           {/* MENU CARD*/}
           <a
-            className="card-link m-0"
+            className="card-link m-0 mt-5"
             href="https://slickdaddysbrewing.com/menu"
             aria-label="View Menu"
           >
@@ -67,7 +67,7 @@ function HomeInfo() {
 
           {/* EVENTS CARD*/}
           <a
-            className="card-link m-0"
+            className="card-link m-0 mt-5"
             href="https://slickdaddysbrewing.com/events"
             aria-label="View Events"
           >
