@@ -12,8 +12,8 @@ function AlertBox() {
         <Alert.Heading>Looking for events?</Alert.Heading>
         <p>
           This component fetches data from a database hosted on Heroku. Heroku
-          apps can take ~10 seconds to "wake-up" if they haven't been used for a
-          few hours. If you're not seeing any data this might be why!
+          apps can take a few seconds to "wake-up" if they haven't been used for
+          a few hours. If you're not seeing any data this might be why!
         </p>
       </Alert>
     );
