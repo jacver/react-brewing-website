@@ -40,34 +40,35 @@ function BeerCard() {
                   />
                 </div>
 
-                <div className="content-card w-100">
+                <div className="content-card w-100 mb-0">
                   <div className="info-rows w-100 d-flex flex-column w-100">
                     <div className="card-top-row d-flex flex-row justify-content-between p-1 ">
                       <p
-                        className="cost d-flex justify-content-center align-items-center"
-                        style={{ fontSize: "1.75em" }}
+                        className="cost d-flex justify-content-center align-items-center "
+                        style={{ fontSize: "1.5em" }}
                       >
                         ${beer.price}
                       </p>
-                      <p style={{ color: "#59ff48", fontSize: "1.75em" }}>
+                      <p style={{ color: "#59ff48", fontSize: "1.5em" }}>
                         {beer.beer_type}
                       </p>
                     </div>
                     <p
                       style={{
                         color: "#59ff48",
-                        fontSize: "1.75rem",
+                        fontSize: "1.5rem",
                         width: "100%",
                       }}
+                      className="mb-0"
                     >
                       {beer.name}
                     </p>
 
-                    <div className="card-middle-row">
-                      <p>{beer.brewer}</p>
+                    <div className="card-middle-row mb-0">
+                      <p className="mb-0">{beer.brewer}</p>
                     </div>
-                    <div className="card-bottom-row p-2">
-                      <p>{beer.description}</p>
+                    <div className="card-bottom-row p-2 mb-0">
+                      <p className="mb-0">{beer.description}</p>
                     </div>
                   </div>
                   <div

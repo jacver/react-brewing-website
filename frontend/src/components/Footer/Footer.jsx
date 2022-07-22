@@ -9,9 +9,11 @@ function Footer() {
   return (
     <footer>
       <div className="footer-wrapper bg-dark text-white p-5 pb-3">
-        <div className="footer-content-row d-flex flex-column flex-md-row justify-content-evenly align-items-evenly">
-          <div className="contact-wrapper d-flex flex-column justify-content-start align-items-start">
-            <p className="vintage-font">Contact us:</p>
+        <div className="footer-content-row d-flex flex-column flex-md-row">
+          <div className="contact-wrapper d-flex flex-column ">
+            <p className="vintage-font fs-2" style={{ color: "#59ff48" }}>
+              Contact us:
+            </p>
             <a aria-label="Business phone number" href="tel:123-456-7890">
               +1 123-456-7890
             </a>
@@ -19,15 +21,19 @@ function Footer() {
               info@sdcb.com
             </a>
           </div>
-          <div className="contact-wrapper d-flex flex-column justify-content-start align-items-start">
-            <p className="vintage-font">Location:</p>
+          <div className="contact-wrapper d-flex flex-column">
+            <p className="vintage-font fs-2" style={{ color: "#59ff48" }}>
+              Location:
+            </p>
             <p className="m-0">123 Fake Rd.</p>
             <p className="m-0">Denver, CO</p>
             <p className="m-0">80237</p>
           </div>
 
-          <div className="contact-wrapper d-flex flex-column justify-content-start align-items-start">
-            <p className="vintage-font">Hours:</p>
+          <div className="contact-wrapper d-flex flex-column">
+            <p className="vintage-font fs-2" style={{ color: "#59ff48" }}>
+              Hours:
+            </p>
             <p className="m-0">Weekdays: 11am - 10pm</p>
             <p className="m-0">Weekdays: 10am - 11pm</p>
           </div>

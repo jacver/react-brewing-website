@@ -8,29 +8,27 @@ import { FaGithub, FaLinkedin, FaRegUser } from "react-icons/fa";
 
 function Welcome() {
   return (
-    <div className="welcomeWrapper text-light p-1">
+    <div className="welcomeWrapper text-light p-1 fs-3">
       <div className="bannerWrapper d-flex flex-wrap flex-column justify-content-center align-items-center mb-5 ">
-        <div style={{ width: "20rem" }} className="logoContainer">
-          <img
-            style={{ width: "100%" }}
-            className="logo"
-            src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"
-            alt=""
-          />
-        </div>
-        <h1 className="welcomeBannerText">
+        <h1 className="welcomeBannerText" style={{ color: "#39ff14" }}>
           WELCOME TO THE <br />
           SLICK DADDY CLUB
         </h1>
       </div>
       <div className="welcomeContent mb-5">
-        <p>Taproom & Outdoor Seating Available</p>
-        <p>Weekdays: 11am - 10pm</p>
-        <p>Weekends: 10am - 11pm</p>
+        <p style={{ color: "#59ff48" }}>Taproom & Outdoor Seating Available</p>
+        <p>
+          <span style={{ color: "#59ff48" }}>Weekdays:</span> 11am - 10pm
+        </p>
+        <p>
+          <span style={{ color: "#59ff48" }}>Weekends:</span> 10am - 11pm
+        </p>
         <p>Tours offered on weekdays from 11am - 12pm</p>
       </div>
-      <div className="ageAuth mb-5">
-        <p>To see more, please verify you are of legal drinking age</p>
+      <div className="ageAuth mb-5 fs-2">
+        <p style={{ color: "#59ff48" }}>
+          To see more, please verify you are of legal drinking age
+        </p>
         <div className="ageGate d-flex gap-3 justify-content-center">
           <a href="/home">
             <div className="hover">
@@ -47,8 +45,8 @@ function Welcome() {
           </a>
         </div>
       </div>
-      <div className="socialsWrapper w-50" style={{ margin: "0 auto" }}>
-        <div className="socialsRow d-flex align-items-center justify-content-center gap-5 fs-4">
+      <div className="socialsWrapper w-50 " style={{ margin: "0 auto" }}>
+        <div className="socialsRow d-flex align-items-center justify-content-center gap-5 fs-1">
           <a
             className="socials-icon"
             href="https://github.com/jacver"

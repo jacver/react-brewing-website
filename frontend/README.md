@@ -1,4 +1,4 @@
-neon green: 59ff48
+neon green: #59ff48
 
 ACCESSABILITY COMPLIANCE:
 95% via https://www.accessibilitychecker.org/#popup_rate

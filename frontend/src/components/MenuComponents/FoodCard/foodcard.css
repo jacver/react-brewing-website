@@ -21,7 +21,7 @@
   height: 80%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .column-1 {
     display: none;
   }
@@ -29,6 +29,7 @@
   .food-item {
     width: 100%;
     margin: 0 auto;
+    padding: 5%;
   }
 
   .food-middle-row {

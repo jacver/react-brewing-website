@@ -18,19 +18,21 @@
   letter-spacing: 2rem;
 
   /* Background styles */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url("https://i.imgur.com/7pFMD4w.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.hero h1 {
+.hero h1,
+h2 {
   /* Text styles */
-  font-size: 5em;
-
+  font-size: 6em;
+  color: #59ff48;
   font-family: Vintages;
+  font-weight: 900;
 
   /* Margins */
   margin-top: 0;
@@ -60,6 +62,7 @@
 
 .hero-scroll {
   color: #59ff48;
+  font-weight: 900;
   animation: bounceAnim 2s linear 1s 1 normal none;
 }
 
@@ -116,5 +119,10 @@
 @media only screen and (max-width: 600px) {
   .hero {
     letter-spacing: normal;
+  }
+
+  .hero h1,
+  h2 {
+    font-size: 4rem;
   }
 }
