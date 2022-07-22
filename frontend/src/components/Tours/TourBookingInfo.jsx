@@ -6,23 +6,32 @@ function TourBookingInfo() {
   return (
     <div>
       <div
-        className="d-flex flex-column justify-content-start align-items-start"
-        style={{ textAlign: "left", margin: "3rem" }}
+        className="d-flex flex-column justify-content-center align-items-center pt-5 mt-5 fs-4"
+        style={{ margin: "0 auto" }}
       >
-        <h2 className="vintage-font">
+        <h2
+          className="vintage-font mb-5"
+          style={{ fontSize: "3rem", margin: "0 auto" }}
+        >
           TOUR <br />
           INFORMATION
         </h2>
         <p>
-          Tours available every Weekday from 11:00 AM to 12:00 PM at no charge.
+          Tours available every Weekday from{" "}
+          <span style={{ color: "#59ff48" }}>from 11:00 AM to 12:00 PM</span> at
+          no charge.
         </p>
         <p>
-          Reservations: Please select an available date below and enter your
-          contact information.
+          <span style={{ color: "#59ff48" }}> Reservations: </span>
+          Please select an available date below and enter your contact
+          information.
         </p>
         <p>
-          Cancellations: If you need to cancel a reservation, please reach out
-          to slickdaddybrewing@gmail.com so we can re-list the date for another
+          <span className="mb-5" style={{ color: "#59ff48" }}>
+            Cancellations:{" "}
+          </span>
+          If you need to cancel a reservation, please reach out to
+          slickdaddybrewing@gmail.com so we can re-list the date for another
           party.
         </p>
       </div>
