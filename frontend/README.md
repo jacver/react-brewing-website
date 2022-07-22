@@ -3,73 +3,118 @@ neon green: #59ff48
 ACCESSABILITY COMPLIANCE:
 95% via https://www.accessibilitychecker.org/#popup_rate
 
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/jacver/react-brewing-website"></a>
 
-## Available Scripts
+  <h3 align="center">SLick Daddy's Brewing Company</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    A React/Django/PostgreSQL application built as a mock CMS. The Frontend subdirectory is deployed via Netlify. The Backend subdirectory is deployed to Heroku.
+    <br />
+    <br />
+    <a href="https://slickdaddysbrewing.com/">View Live (Netlify)</a>
+    ·
+    <a href="https://github.com/jacver/react-brewing-website/issues">Report Bug</a>
+  </p>
+    <br />
+    <p>Heroku loading times can be 10s if the app has not been launched in some time</p>
+    <br />
+</div>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#project-process">Project Process</a></li>
+    <li><a href="#wireframe">Wireframe</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ABOUT THE PROJECT -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About The Project
 
-### `npm test`
+This full-stack application uses React for the frontend, Django for the backend, and PostgreSQL as a database. This project was built to test accessability, SEO, and different node packages in a fun way.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run build`
+### Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Major frameworks/libraries used:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React](https://reactjs.org/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Django](https://docs.djangoproject.com/en/4.0/)
+- [Flatpickr](https://flatpickr.js.org/)
+- [Full Calendar](https://fullcalendar.io/docs#toc)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run eject`
+<!-- USAGE -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Production](https://i.imgur.com/Zuu832X.mp4)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- PROCESS -->
 
-## Learn More
+## Project Process
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [x] Build & migrate Django models for Beer, Food, Merch, Events, and Tours
+- [x] Implement Django DRF & test Django Admin forms for CRUD
+- [x] Create Routing in Django backend
+- [x] Host backend on Heroku
+- [x] Create frontend skeleton w/ create-react-app
+- [x] Use React-Router-DOM to create pages & paths
+- [x] Ensure ability to fetch data to appropriate components
+- [x] Add calendar & populate w/ fetched events
+- [x] Implement date picker w/ forms to CREATE tour reservations
+- [ ] Replace imgur image hosts and implement files into public dir
+- [ ] Implement Shopify/Stripe for mock eCommerce storefront
+- [ ] Create Sitemap for better SEO
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Code Splitting
+<!-- WIREFRAME -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Wireframe
 
-### Analyzing the Bundle Size
+![Welcome & Home](https://i.imgur.com/BsWWAfC.png)
+![Menu, Store, Events, Tours](https://i.imgur.com/yuqvDI0.png)
+![Visit, About](https://i.imgur.com/RHfWUqS.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Making a Progressive Web App
+<!-- ROADMAP -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Roadmap
 
-### Advanced Configuration
+- [x] Purchase and implement domain name
+- [ ] Have images stored locally & render on deployed version to avoid online image hosting
+- [ ] Add mock storefront
+- [ ] Implement Stripe or PayPal for mock transactions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- CONTACT -->
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Jacob Vernau - [LinkedIn](https://www.linkedin.com/in/jacobvernau/)
 
-### `npm run build` fails to minify
+Project Link: [https://github.com/jacver/react-brewing-website](https://github.com/jacver/react-brewing-website)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#top">back to top</a>)</p>
