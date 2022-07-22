@@ -1,3 +1,8 @@
+neon green: #59ff48
+
+ACCESSABILITY COMPLIANCE:
+95% via https://www.accessibilitychecker.org/#popup_rate
+
 <div id="top"></div>
 
 <!-- PROJECT LOGO -->
@@ -30,7 +35,6 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#accessability">Accessability</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#project-process">Project Process</a></li>
     <li><a href="#wireframe">Wireframe</a></li>
@@ -56,14 +60,6 @@ Major frameworks/libraries used:
 - [Django](https://docs.djangoproject.com/en/4.0/)
 - [Flatpickr](https://flatpickr.js.org/)
 - [Full Calendar](https://fullcalendar.io/docs#toc)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ACCESSABILITY -->
-
-## Accessability
-
-<p>One of the goals for this project was to implement good accessability. One of the ways I tested compliance was through [Accessability Checker](https://www.accessibilitychecker.org/#popup_rate). I was able to increase accessability scores to 95%. </p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
