@@ -67,7 +67,7 @@ Major frameworks/libraries used:
 
 ## Usage
 
-![Production](https://i.imgur.com/Zuu832X.mp4)
+![Production](https://imgur.com/a/bUo68Ly)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
