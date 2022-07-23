@@ -1,8 +1,3 @@
-neon green: #59ff48
-
-ACCESSABILITY COMPLIANCE:
-95% via https://www.accessibilitychecker.org/#popup_rate
-
 <div id="top"></div>
 
 <!-- PROJECT LOGO -->
@@ -87,6 +82,7 @@ Major frameworks/libraries used:
 - [x] Ensure ability to fetch data to appropriate components
 - [x] Add calendar & populate w/ fetched events
 - [x] Implement date picker w/ forms to CREATE tour reservations
+- [ ] Implement Django emails for confirmation email on reservation
 - [ ] Replace imgur image hosts and implement files into public dir
 - [ ] Implement Shopify/Stripe for mock eCommerce storefront
 - [ ] Create Sitemap for better SEO
@@ -109,6 +105,7 @@ Major frameworks/libraries used:
 
 - [x] Purchase and implement domain name
 - [ ] Have images stored locally & render on deployed version to avoid online image hosting
+- [ ] Implement Django emails for confirmation email on reservation
 - [ ] Add mock storefront
 - [ ] Implement Stripe or PayPal for mock transactions
 
