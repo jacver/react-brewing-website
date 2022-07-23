@@ -5,7 +5,7 @@
 <div align="center">
   <a href="https://github.com/jacver/react-brewing-website"></a>
 
-  <h3 align="center">SLick Daddy's Brewing Company</h3>
+  <h3 align="center">Slick Daddy's Brewing Company</h3>
 
   <p align="center">
     A React/Django/PostgreSQL application built as a mock CMS. The Frontend subdirectory is deployed via Netlify. The Backend subdirectory is deployed to Heroku.
