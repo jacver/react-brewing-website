@@ -67,7 +67,10 @@ Major frameworks/libraries used:
 
 ## Usage
 
-![Production](https://imgur.com/a/bUo68Ly)
+![Age Gate](https://i.imgur.com/joZoGoq.png)
+![Menu Cards](https://i.imgur.com/NLOwQ50.png)
+![Tour Booking Forms](https://i.imgur.com/lilYui1.png)
+![Events Calendar](https://i.imgur.com/HqFtuQP.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
