@@ -4,7 +4,7 @@ import Image from "react-bootstrap/Image";
 
 function AboutImagePanel() {
   return (
-    <div className="image-panel-container bg-dark d-flex flex-column flex-md-row justify-content-evenly pb-5">
+    <div className="image-panel-container bg-dark d-none d-flex flex-column flex-sm-row d-sm-block justify-content-evenly align-items-evenly pb-5  ">
       <Image
         src="https://images.pexels.com/photos/5858064/pexels-photo-5858064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="" // use empty alt tags for purely decorative images such as these stock images

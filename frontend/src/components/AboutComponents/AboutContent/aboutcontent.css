@@ -5,12 +5,24 @@
 }
 
 .card-description {
-  max-width: 80%;
+  width: 80%;
+
   margin: 0 auto;
+}
+
+.about-portrait {
+  margin-top: 10vh;
+  max-width: 80%;
+  height: 30rem;
 }
 
 @media only screen and (max-device-width: 768px) {
   .about-content-wrapper {
     padding-top: 10%;
+  }
+
+  .about-portrait {
+    height: 50%;
+    width: 100%;
   }
 }

@@ -11,7 +11,7 @@ function AboutContent() {
       role: "Co-Owner",
       description:
         "Often voted as having the firmest handshake in the Rocky Mountains, Jake's vision for a brewery came to him while he ran a 3 minute mile (above average speed). After watching all three Shrek movies back-to-back, the vision for Slick Daddy's Brewing Company shined more clear than ever. The rest is history.",
-      photo: "https://i.imgur.com/4s4omug.png",
+      photo: "https://i.imgur.com/TcoEiXp.png",
     },
     {
       name: "Nick Billingsley",
@@ -32,9 +32,9 @@ function AboutContent() {
         return (
           <div key={idx} className="dad-card mb-5">
             <img
+              className="about-portrait"
               src={daddy.photo}
               alt={"Employee Portrait"}
-              style={{ maxWidth: "80%", height: "100%" }}
             />
 
             <h1 className="p-3">{daddy.name}</h1>
