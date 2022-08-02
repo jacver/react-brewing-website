@@ -18,8 +18,8 @@ function TourBookingInfo() {
         </h2>
         <p>
           Tours available every Weekday from{" "}
-          <span style={{ color: "#59ff48" }}>from 11:00 AM to 12:00 PM</span> at
-          no charge.
+          <span style={{ color: "#59ff48" }}>11:00 AM to 12:00 PM</span> at no
+          charge.
         </p>
         <p>
           <span style={{ color: "#59ff48" }}> Reservations: </span>
